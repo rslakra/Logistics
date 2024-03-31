@@ -19,7 +19,7 @@ import com.devamatre.appsuite.core.BeanUtils;
 import com.devamatre.appsuite.spring.exception.InvalidRequestException;
 import com.devamatre.appsuite.spring.exception.NoRecordFoundException;
 import com.devamatre.appsuite.spring.filter.Filter;
-import com.devamatre.appsuite.spring.persistence.Operation;
+import com.devamatre.appsuite.spring.persistence.ServiceOperation;
 import com.devamatre.appsuite.spring.service.AbstractService;
 import com.rslakra.shipwreck.model.ShipWreck;
 import com.rslakra.shipwreck.repository.ShipWreckRepository;
@@ -33,7 +33,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @author Rohtash Singh Lakra
+ * @author Rohtash Lakra
  * @version 1.0.0
  */
 @Service
@@ -58,7 +58,7 @@ public class ShipWreckService implements AbstractService<ShipWreck, Long> {
      * @return
      */
     @Override
-    public ShipWreck validate(Operation operation, ShipWreck shipWreck) {
+    public ShipWreck validate(ServiceOperation operation, ShipWreck shipWreck) {
         switch (operation) {
             case CREATE:
                 if (BeanUtils.isEmpty(shipWreck)) {
@@ -100,7 +100,7 @@ public class ShipWreckService implements AbstractService<ShipWreck, Long> {
     @Override
     public ShipWreck create(ShipWreck shipWreck) {
         LOGGER.debug("+create({})", shipWreck);
-        validate(Operation.CREATE, shipWreck);
+        validate(ServiceOperation.CREATE, shipWreck);
         shipWreck = shipWreckRepository.save(shipWreck);
         LOGGER.debug("-create(), shipWreck:{}", shipWreck);
         return shipWreck;
@@ -113,7 +113,7 @@ public class ShipWreckService implements AbstractService<ShipWreck, Long> {
     @Override
     public List<ShipWreck> create(List<ShipWreck> shipWrecks) {
         LOGGER.debug("+create({})", shipWrecks);
-        shipWrecks.forEach(shipWreck -> validate(Operation.CREATE, shipWreck));
+        shipWrecks.forEach(shipWreck -> validate(ServiceOperation.CREATE, shipWreck));
         shipWrecks = shipWreckRepository.saveAll(shipWrecks);
         LOGGER.debug("-create(), shipWrecks:{}", shipWrecks);
         return shipWrecks;
@@ -170,7 +170,7 @@ public class ShipWreckService implements AbstractService<ShipWreck, Long> {
     @Override
     public ShipWreck update(ShipWreck shipWreck) {
         LOGGER.debug("+update({})", shipWreck);
-        validate(Operation.UPDATE, shipWreck);
+        validate(ServiceOperation.UPDATE, shipWreck);
         ShipWreck oldShipWreck = getById(shipWreck.getId());
         BeanUtils.copyProperties(shipWreck, oldShipWreck);
         shipWreck = shipWreckRepository.save(oldShipWreck);
@@ -185,7 +185,7 @@ public class ShipWreckService implements AbstractService<ShipWreck, Long> {
     @Override
     public List<ShipWreck> update(List<ShipWreck> shipWrecks) {
         LOGGER.debug("+update({})", shipWrecks);
-        shipWrecks.forEach(shipWreck -> validate(Operation.UPDATE, shipWreck));
+        shipWrecks.forEach(shipWreck -> validate(ServiceOperation.UPDATE, shipWreck));
         shipWrecks = shipWreckRepository.saveAll(shipWrecks);
         LOGGER.debug("-update(), shipWrecks:{}", shipWrecks);
         return shipWrecks;

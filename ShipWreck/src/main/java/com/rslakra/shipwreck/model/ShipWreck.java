@@ -26,7 +26,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 /**
- * @author Rohtash Singh Lakra
+ * @author Rohtash Lakra
  * @version 1.0.0
  */
 @Getter

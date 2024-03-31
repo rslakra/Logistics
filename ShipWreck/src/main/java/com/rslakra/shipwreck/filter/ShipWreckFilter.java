@@ -1,17 +1,16 @@
 package com.rslakra.shipwreck.filter;
 
-import com.devamatre.appsuite.spring.filter.AbstractFilterImpl;
+import com.devamatre.appsuite.spring.filter.AbstractFilter;
 import com.rslakra.shipwreck.model.ShipWreck;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.jpa.domain.Specification;
 
-import java.util.Map;
-
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
+import java.util.Map;
 
 /**
  * @author Rohtash Lakra
@@ -19,7 +18,7 @@ import javax.persistence.criteria.Root;
  */
 @Getter
 @Setter
-public final class ShipWreckFilter extends AbstractFilterImpl implements Specification<ShipWreck> {
+public final class ShipWreckFilter extends AbstractFilter<ShipWreck> implements Specification<ShipWreck> {
 
     private FilterCriteria criteria;
 

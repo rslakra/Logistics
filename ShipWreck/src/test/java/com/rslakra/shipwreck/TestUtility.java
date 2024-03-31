@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author Rohtash Singh Lakra
+ * @author Rohtash Lakra
  * @version 1.0.0
  */
 public final class TestUtility {

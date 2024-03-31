@@ -20,7 +20,7 @@ import com.rslakra.shipwreck.model.ShipWreck;
 import org.springframework.stereotype.Repository;
 
 /**
- * @author Rohtash Singh Lakra
+ * @author Rohtash Lakra
  * @version 1.0.0
  */
 @Repository

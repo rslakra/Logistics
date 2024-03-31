@@ -23,7 +23,7 @@
 //import com.rslakra.shipwreck.model.ShipWreck;
 //
 ///**
-// * @author Rohtash Singh Lakra
+// * @author Rohtash Lakra
 // * @version 1.0.0
 // */
 //public class ShipWreckManager {

@@ -10,7 +10,7 @@
 //import org.springframework.context.annotation.Primary;
 //
 ///**
-// * @author Rohtash Singh Lakra
+// * @author Rohtash Lakra
 // * @version 1.0.0
 // */
 //@Configuration

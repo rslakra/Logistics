@@ -33,7 +33,7 @@ import java.util.Map;
 import java.util.Optional;
 
 /**
- * @author Rohtash Singh Lakra
+ * @author Rohtash Lakra
  * @version 1.0.0
  */
 @RestController
@@ -107,7 +107,7 @@ public class ShipWreckController extends AbstractRestController<ShipWreck, Long>
             ShipWreck shipWreck = shipWreckService.getById(filter.getLong(ShipWreckFilter.ID));
             shipWrecks = Arrays.asList(shipWreck);
         } else if (filter.hasKey(ShipWreckFilter.NAME)) {
-//            shipWrecks = Arrays.asList(shipWreckService.getById(filter.getValue(ShipWreckFilter.NAME)));
+// shipWrecks = Arrays.asList(shipWreckService.getById(filter.getValue(ShipWreckFilter.NAME)));
         } else {
             shipWrecks = shipWreckService.getByFilter(filter);
         }

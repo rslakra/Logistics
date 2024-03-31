@@ -18,7 +18,7 @@ import java.util.List;
  * The TestCase for the ShipWreck controller class. It uses the
  * <code>Mockito</code> for testing.
  *
- * @author Rohtash Singh Lakra
+ * @author Rohtash Lakra
  * @version 1.0.0
  */
 @ExtendWith(SpringExtension.class)
