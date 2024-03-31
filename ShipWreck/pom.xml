@@ -43,10 +43,10 @@
         <checkstyle.threshold>0</checkstyle.threshold>
 
         <!-- appsuite-core -->
-        <appsuite-core.version>0.0.4</appsuite-core.version>
+        <appsuite-core.version>0.0.28</appsuite-core.version>
 
         <!-- appsuite-spring -->
-        <appsuite-spring.version>0.0.4</appsuite-spring.version>
+        <appsuite-spring.version>0.0.11</appsuite-spring.version>
 
         <!-- lombok -->
         <lombok.version>1.18.28</lombok.version>
@@ -67,7 +67,7 @@
 
         <model.mapper.version>2.3.0</model.mapper.version>
         <hibernate.types.version>2.10.1</hibernate.types.version>
-        <json.version>20231013</json.version>
+        <json.version>20240205</json.version>
         <javx.xml.bind.version>2.3.0</javx.xml.bind.version>
         <geodesy.version>1.1.3</geodesy.version>
         <mockito.all.version>2.0.2-beta</mockito.all.version>
