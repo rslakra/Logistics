@@ -15,12 +15,12 @@
  */
 package com.rslakra.shipwreck.services;
 
-import com.devamatre.appsuite.core.BeanUtils;
-import com.devamatre.appsuite.spring.exception.InvalidRequestException;
-import com.devamatre.appsuite.spring.exception.NoRecordFoundException;
-import com.devamatre.appsuite.spring.filter.Filter;
-import com.devamatre.appsuite.spring.persistence.ServiceOperation;
-import com.devamatre.appsuite.spring.service.AbstractService;
+import com.rslakra.appsuite.core.BeanUtils;
+import com.rslakra.appsuite.spring.exception.InvalidRequestException;
+import com.rslakra.appsuite.spring.exception.NoRecordFoundException;
+import com.rslakra.appsuite.spring.filter.Filter;
+import com.rslakra.appsuite.spring.persistence.ServiceOperation;
+import com.rslakra.appsuite.spring.service.AbstractService;
 import com.rslakra.shipwreck.model.ShipWreck;
 import com.rslakra.shipwreck.repository.ShipWreckRepository;
 import org.slf4j.Logger;
