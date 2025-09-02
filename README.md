@@ -9,10 +9,15 @@ The ```Logistics``` services.
 ---
 
 ```
-    /
-    ├── ShipWreck
-    ├── YatraSuite
-    └── README.md
+/
+├── ShipWreck
+├── YatraSuite
+│    ├── README.md                  # Instructions and helpful links
+│    └── /
+├── README.md                       # Instructions and helpful links
+├── robots.txt                      # tells which URLs the search engine crawlers can access on your site
+├── <module>                        # The module service
+└── /
 ```
 
 
