@@ -1,10 +1,7 @@
 <div class="container pad-top">
     <a ui-sref="newShipWreck" class="btn btn-primary btn-lg nodecoration">Add New Shipwreck</a>
+    <h3>List of Shipwrecks</h3>
     <table class="table shipwrecktable">
-        <tr>
-            <td><h3>All Shipwrecks</h3></td>
-            <td></td>
-        </tr>
         <tr ng-repeat="shipwreck in shipwrecks">
             <td width="10%">{{shipwreck.name}}</td>
             <td width="60%">{{shipwreck.description}}</td>

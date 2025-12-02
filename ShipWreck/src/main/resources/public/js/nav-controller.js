@@ -13,11 +13,14 @@ angular.module('navController', []).controller('nav',
             return ('#' + $state.$current.url.source + '/').indexOf(url + '/') === 0;
         };
 
-        $scope.pages = [{
+        $scope.pages = [
+        /*{
             name: 'Home',
             url: '#/'
-        }, {
-            name: 'ShipWrecks',
+        }, 
+        */
+        {
+            name: 'ShipWreck List',
             url: '#/shipwrecks'
         }]
     });
